@@ -6,3 +6,9 @@
   from = "/success"
   to = "/"
   status = 302
+
+# Redirect all 404s to index.html (for client-side routing)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
