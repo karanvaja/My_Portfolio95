@@ -23,9 +23,13 @@ A modern, responsive cybersecurity portfolio website built with Flask, Python, H
 - **Icons**: Font Awesome
 - **Fonts**: Google Fonts (Orbitron, Rajdhani)
 
+  my resume live link : https://my-portfolio95-git-main-0999-51a2.vercel.app/
+
 ## Installation
 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
 cd vaja-karan-portfolio
+
+
