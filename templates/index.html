@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaja Karan - Cybersecurity Professional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Vaja Karan</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section - CORRECTED -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">Cyber Security</div>
+                    <h1 class="hero-title">
+                        <span class="highlight">Vaja Karan</span>
+                    </h1>
+                    <h2 class="hero-subtitle">SOC Operations · Ethical Hacker</h2>
+                    <p class="hero-description">Cybersecurity Professional</p>
+
+                    <!-- Hero Stats -->
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <i class="fas fa-shield-halved"></i>
+                            <span class="stat-number">Top 6%</span>
+                            <span class="stat-label">TryHackMe</span>
+                        </div>
+                        <div class="hero-stat">
+                            <i class="fas fa-laptop-code"></i>
+                            <span class="stat-number">70+</span>
+                            <span class="stat-label">Rooms</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#cyber security.pdf" class="btn btn-secondary" onclick="downloadResume()">Resume</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card hero-profile">
+                        <img src="{{ url_for('static', filename='images/karan.png') }}" alt="Vaja Karan">
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="number">Top 6%</span>
+                                <span class="label">TryHackMe</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">70+</span>
+                                <span class="label">Rooms</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="matrix-rain"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm Vaja Karan, a Cybersecurity Specialist with expertise in penetration testing, bug bounty
+                            hunting, VAPT Analyst, Ethical Hacking, digital forensics, and Frontend Web Development.</p>
+                        <p>I am a BCA graduate and aspiring cybersecurity analyst with hands-on training in VAPT,
+                            Ethical Hacking, and SOC operations. I combine academic knowledge with relentless practical
+                            experience—ranked in the Top 6% on TryHackMe, with 70+ rooms completed.</p>
+                        <p>Proficient in tools like Nmap, Burp Suite, Wireshark, and Metasploit, I am passionate about
+                            finding vulnerabilities and building stronger defenses. I am eager to launch my career as a
+                            Junior VAPT or SOC L1 Analyst.</p>
+                        <p>I specialize in creating responsive and modern web applications using HTML, CSS, JavaScript,
+                            Bootstrap, and React.js.</p>
+
+                        <div class="education-box">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <p><strong>Bachelor of Computer Application (BCA)</strong><br>
+                                Shri K.M. Savjani &amp; Smt. K.K. Savjani BBA/BCA College, 2023-2026</p>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="profile-card">
+                            <img src="{{ url_for('static', filename='images/karan.png') }}" alt="Vaja Karan">
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="number">Top 6%</span>
+                                    <span class="label">TryHackMe</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="number">70+</span>
+                                    <span class="label">Rooms</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-box">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <div class="education-item">
+                                <h4>Bachelor of Computer Application (BCA)</h4>
+                                <p class="institution">Shri K.M. Savjani &amp; Smt. K.K. Savjani BBA/BCA College</p>
+                                <span class="year">2023 - 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills &amp; Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    {% for skill in skills.technical %}
+                    <div class="skill-card">
+                        <i class="fas {{ skill.icon }}"></i>
+                        <h3>{{ skill.name }}</h3>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Tools Proficiency -->
+                <div class="skills-tools">
+                    <h3><i class="fas fa-tools"></i> Tools Proficiency</h3>
+                    <div class="tools-grid">
+                        {% for tool in skills.tools %}
+                        <div class="tool-item">
+                            <span class="tool-name">
+                                <i class="fas {{ tool.icon }}"></i> {{ tool.name }}
+                                <span class="tool-level">{{ tool.level }}%</span>
+                            </span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: {{ tool.level }}%;"></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects &amp; Achievements</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Real-world security assessments, penetration testing, and web
+                        development projects</p>
+                </div>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
+                    <button class="filter-btn" data-filter="Security Tools">Security Tools</button>
+                    <button class="filter-btn" data-filter="Web Development">Web Development</button>
+                </div>
+                <div class="projects-grid">
+                    {% for project in projects %}
+                    <div class="project-card" data-category="{{ project.category }}">
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='images/project/' + project.image) }}"
+                                alt="{{ project.title }}">
+                            <span class="project-category">{{ project.category }}</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>{{ project.title }}</h3>
+                            <p class="project-type">{{ project.type }} • {{ project.year }}</p>
+                            <p class="project-desc">{{ project.description }}</p>
+                            <ul class="project-features">
+                                {% for feature in project.features[:3] %}
+                                <li><i class="fas fa-check"></i> {{ feature }}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="project-tools">
+                                {% for tool in project.tools %}
+                                <span class="tool-tag">{{ tool }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications &amp; Training</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Industry-recognized certifications demonstrating expertise in
+                        cybersecurity</p>
+                </div>
+                <div class="certifications-grid">
+                    {% for cert in certifications %}
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas {{ cert.icon }}"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>{{ cert.title }}</h3>
+                            <p class="cert-issuer">{{ cert.issuer }} • {{ cert.year }}</p>
+                            {% if cert.verified %}
+                            <span class="cert-verified"><i class="fas fa-check-circle"></i> Verified</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">My professional journey in cybersecurity and web development</p>
+                </div>
+                <div class="experience-timeline">
+                    {% for exp in experience %}
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <h3>{{ exp.title }}</h3>
+                            <span class="exp-company">{{ exp.company }}</span>
+                            <span class="exp-duration">{{ exp.duration }}</span>
+                            <span class="exp-location"><i class="fas fa-map-marker-alt"></i> {{ exp.location }}</span>
+                        </div>
+                        <p class="exp-description">{{ exp.description }}</p>
+                        <ul class="exp-responsibilities">
+                            {% for resp in exp.responsibilities %}
+                            <li><i class="fas fa-chevron-right"></i> {{ resp }}</li>
+                            {% endfor %}
+                        </ul>
+                        <div class="exp-technologies">
+                            {% for tech in exp.technologies %}
+                            <span class="tech-tag">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">I specialize in cybersecurity, penetration testing, Digital Forensics,
+                        Bug Bounty Hunters and Web Developer.</p>
+                </div>
+                <div class="services-grid">
+                    {% for service in services %}
+                    <div class="service-card">
+                        <i class="fas {{ service.icon }}"></i>
+                        <h3>{{ service.title }}</h3>
+                        <p>{{ service.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+
+     <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Ready to enhance your cybersecurity?</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>Feel free to send me a message for any project or collaboration.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:vajakaran95@gmail.com">vajakaran95@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919724427396">+91 9724427396</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Cyber Security</span>
+                    </div>
+                </div>
+                <div class="contact-actions">
+                    <a href="https://wa.me/919724427396" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book a Meeting · WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <!-- FORM 1: For Flask Local Development -->
+                <form id="contactForm" method="POST" action="{{ url_for('send_email') }}" class="flask-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-note">Message opens in your default email</p>
+                </form>
+
+                <!-- FORM 2: For Netlify Production -->
+                <form name="contact" method="POST" data-netlify="true" style="display: none;">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-note">Message will be sent to vajakaran95@gmail.com</p>
+                </form>
+                
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle">Ready to enhance your cybersecurity?</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>Feel free to send me a message for any project or collaboration.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:vajakaran95@gmail.com">vajakaran95@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+919724427396">+91 9724427396</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-shield-halved"></i>
+                                <span>Cyber Security</span>
+                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="https://wa.me/919724427396" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Book a Meeting · WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form name="contact" method="POST" action="{{ url_for('send_email') }}">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email Address *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <p class="form-note">Message opens in your default email</p>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Vaja Karan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919724427396" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
