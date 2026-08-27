@@ -344,6 +344,28 @@
                     </a>
                 </div>
             </div>
+               
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm" method="POST" action="{{ url_for('send_email') }}">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                    <p class="form-note" id="formNote">Message will be sent to vajakaran95@gmail.com</p>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+     </section>
+    </main>
             <!-- <div class="contact-form">
                 <!-- FORM 1: For Flask Local Development -->
                 <!-- <form id="contactForm" method="POST" action="{{ url_for('send_email') }}" class="flask-form">
@@ -382,57 +404,7 @@
     </div> -->
 <!-- </section>  -->
         
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <div class="section-line"></div>
-                    <p class="section-subtitle">Ready to enhance your cybersecurity?</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Let's Work Together</h3>
-                        <p>Feel free to send me a message for any project or collaboration.</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:vajakaran95@gmail.com">vajakaran95@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <a href="tel:+919724427396">+91 9724427396</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-shield-halved"></i>
-                                <span>Cyber Security</span>
-                            </div>
-                        </div>
-                        <div class="contact-actions">
-                            <a href="https://wa.me/919724427396" class="btn btn-whatsapp" target="_blank">
-                                <i class="fab fa-whatsapp"></i> Book a Meeting · WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form name="contact" method="POST" action="{{ url_for('send_email') }}">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Full Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Email Address *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" rows="5" placeholder="Your Message"
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                            <p class="form-note">Message opens in your default email</p>
-                        </form>
-                        <div id="formMessage" class="form-message"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      
     </main>
 
     <!-- Footer -->
