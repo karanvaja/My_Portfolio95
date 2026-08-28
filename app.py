@@ -85,7 +85,7 @@ PROJECTS_DATA = [
         'id': 2,
         'title': 'HIDDEN EYE',
         'category': 'Security Tools',
-        'year': '2028',
+        'year': '2026',
         'type': 'VSecurity Labs',
         'description': 'Developed a Python-based tool for detecting and analysing hidden data in image files. Designed a dark-themed GUI with keyboard shortcuts for security analysis.',
         'features': [
@@ -100,7 +100,7 @@ PROJECTS_DATA = [
         'id': 3,
         'title': 'V.K. PASSWORD GENERATOR PRO+',
         'category': 'Security Tools',
-        'year': '2028',
+        'year': '2026',
         'type': 'VSecurity Labs',
         'description': 'Developed a Python-based password generation and security utility with multiple password-generation approaches.',
         'features': [
@@ -155,21 +155,21 @@ CERTIFICATIONS_DATA = [
     {
         'title': 'Hackviser Certified Cybersecurity Foundations (CORE)',
         'issuer': 'HACKVISER',
-        'year': '2020',
+        'year': '2026',
         'verified': True,
         'icon': 'fa-certificate'
     },
     {
         'title': 'Tata-Forage Cybersecurity Analyst Job Simulation',
         'issuer': 'TATA-FORAGE',
-        'year': '2020',
+        'year': '2026',
         'verified': True,
         'icon': 'fa-certificate'
     },
     {
         'title': 'TryHackMe Hands-on Cybersecurity Labs and CTF Practice',
         'issuer': 'TRYHACKME',
-        'year': '2025',
+        'year': '2026',
         'verified': True,
         'icon': 'fa-shield-halved'
     }
