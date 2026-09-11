@@ -380,25 +380,6 @@ body {
     box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
 }
 
-/* ========================================
-   MATRIX RAIN EFFECT
-   ======================================== */
-
-/* .matrix-rain {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    opacity: 0.1;
-    background: repeating-linear-gradient(0deg,
-            var(--primary) 0px,
-            transparent 2px,
-            transparent 20px);
-    mask-image: linear-gradient(to bottom, transparent, black);
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black);
-    pointer-events: none;
-} */
 
 /* ========================================
    SECTIONS
@@ -1259,9 +1240,7 @@ section {
         justify-content: center;
     }
 
-    /* .matrix-rain {
-        display: none;
-    } */
+ 
 
     .about-right {
         max-width: 500px;
