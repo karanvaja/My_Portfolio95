@@ -384,7 +384,7 @@ body {
    MATRIX RAIN EFFECT
    ======================================== */
 
-.matrix-rain {
+/* .matrix-rain {
     position: absolute;
     top: 0;
     right: 0;
@@ -398,7 +398,7 @@ body {
     mask-image: linear-gradient(to bottom, transparent, black);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black);
     pointer-events: none;
-}
+} */
 
 /* ========================================
    SECTIONS
