@@ -1259,9 +1259,9 @@ section {
         justify-content: center;
     }
 
-    .matrix-rain {
+    /* .matrix-rain {
         display: none;
-    }
+    } */
 
     .about-right {
         max-width: 500px;
