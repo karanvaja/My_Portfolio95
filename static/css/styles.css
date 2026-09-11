@@ -117,7 +117,7 @@ body {
 }
 
 /* ========================================
-   HERO SECTION
+   HERO SECTION - FIXED
    ======================================== */
 
 .hero {
@@ -139,11 +139,13 @@ body {
     gap: 4rem;
     padding: 4rem 2rem;
     align-items: center;
+    background: transparent;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
+    background: transparent;
 }
 
 .hero-badge {
@@ -251,7 +253,7 @@ body {
 }
 
 /* ========================================
-   HERO PROFILE CARD
+   HERO PROFILE CARD - FIXED
    ======================================== */
 
 .hero-visual {
@@ -259,6 +261,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    background: transparent;
 }
 
 .hero-profile {
@@ -380,7 +383,6 @@ body {
     box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
 }
 
-
 /* ========================================
    SECTIONS
    ======================================== */
@@ -450,7 +452,6 @@ section {
     gap: 2rem;
 }
 
-/* Profile Card (About Section) */
 .profile-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -609,8 +610,6 @@ section {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     text-align: center;
-    /* font-family: 'Orbitron', monospace; */
-    /* text-shadow: 0 0 30px rgba(42, 255, 182, 0.15); */
 }
 
 .tools-grid {
@@ -620,16 +619,9 @@ section {
 
 .tool-item {
     margin-bottom: 1.5rem;
-    /* background: var(--card-bg);
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    transition: all 0.3s ease; */
 }
 
 .tool-item:hover {
-    border-color: var(--primary);
-    box-shadow: var(--glow);
     transform: translateX(5px);
 }
 
@@ -654,7 +646,6 @@ section {
     background: rgba(255, 255, 255, 0.06);
     border-radius: 4px;
     overflow: hidden;
-    /* position: relative; */
 }
 
 .progress {
@@ -663,10 +654,9 @@ section {
     border-radius: 4px;
     transition: width 1.5s ease;
     box-shadow: 0 0 20px rgba(42, 255, 182, 0.2);
-    /* position: relative; */
+    position: relative;
 }
 
-/* Progress bar glow effect */
 .progress::after {
     content: '';
     position: absolute;
@@ -691,14 +681,11 @@ section {
     }
 }
 
-/* Tool level percentage */
 .tool-level {
     float: right;
     font-family: 'Orbitron', monospace;
     font-size: 0.85rem;
     color: var(--primary);
-    /* font-weight: 600; */
-    /* text-shadow: 0 0 20px rgba(42, 255, 182, 0.2); */
 }
 
 /* ========================================
@@ -1240,8 +1227,6 @@ section {
         justify-content: center;
     }
 
- 
-
     .about-right {
         max-width: 500px;
         margin: 0 auto;
@@ -1301,7 +1286,6 @@ section {
         font-size: 1.3rem;
     }
 
-    /* Hero Stats Responsive */
     .hero-stats {
         gap: 2rem;
         justify-content: center;
@@ -1389,7 +1373,6 @@ section {
         font-size: 1.4rem;
     }
 
-    /* Hero Stats Mobile */
     .hero-stats {
         gap: 1.5rem;
     }
